@@ -11,25 +11,27 @@
 ## 项目结构说明
 
 ```bash
-├── /dist/           # 项目输出目录
-├── /mock/           # 数据mock
-├── /src/            # 项目源码目录
-│ ├── /assets/       # 静态资源
-│ ├── /components/   # UI组件及UI相关方法
-│ ├── /models/       # 数据模型
-│ ├── /pages/        # 路由组件
-│ ├── /services/     # 数据接口
-│ ├── /utils/        # 工具函数
-│ │ ├── request.js   # 异步请求函数
-│ │ └── theme.js     # 项目需要在js中使用到样式变量
-│ └── global.css     # 全局样式
-├── .eslintrc        # Eslint配置
-├── .gitignore       # Git配置
-├── .umirc.js        # Umi配置
-├── LICENSE          # 开源协议
-├── package.json     # 项目信息
-├── README.md        # 项目描述
-└── yarn.lock        # 项目信息
+├── dist/                          // 默认的 build 输出目录
+├── mock/                          // mock 文件所在目录，基于 express
+├── src/                           // 源码目录，可选
+│ ├── assets/                      // 静态资源，编译时copy至dist目录
+│ ├── components/                  // UI组件及UI相关方法
+│ ├── models/                      // 全局数据模型(默认加载)
+│ ├── pages/                       // 页面目录，里面的文件即路由
+│ │ ├── .umi/                      // dev 临时目录，需添加到 .gitignore
+│ │ └── .umi-production/           // build 临时目录，会自动删除
+│ ├── services/                    // 数据接口
+│ ├── utils/                       // 工具函数
+│ │ └── request.js                 // 异步请求函数
+│ ├── global.css                   // 约定的全局样式文件，自动引入，也可以用 global.less
+│ └── global.js                    // 可以在这里加入 polyfill
+├── .eslintrc                      // Eslint配置
+├── .gitignore                     // Git配置
+├── .umirc.js                      // umi 配置
+├── LICENSE                        // 开源协议
+├── package.json                   // 项目信息
+├── README.md                      // 项目描述
+└── yarn.lock                      // 项目信息
 ```
 
 ## 相关教程
