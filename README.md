@@ -2,7 +2,9 @@
 
 [![](https://img.shields.io/badge/umi-^1.0.0-blue.svg?style=flat-square)](https://github.com/facebook/react)
 
-学习umi
+学习`umi`
+
+`UmiJS` 是一个类 `Next.JS` 的 `react` 开发框架。他基于一个约定，即 `pages` 目录下的文件即路由，而文件则导出 `react` 组件，然后打通从源码到产物的每个阶段，并配以完善的插件体系，让我们能把 `umi` 的产物部署到各种场景里。
 
 ## 目录
 
