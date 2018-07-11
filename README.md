@@ -10,14 +10,27 @@
 
 ## 项目结构说明
 
-- `./mock` 用来存放mock资源的文件夹
-- `./src/assets` 用来存放资源文件的文件夹（会被打包编译）
-- `./src/components` 用来存放自定义组件的文件夹
-- `./src/models` 用来存放数据及操作数据方法的文件夹
-- `./src/pages` 用来存放界面的文件夹
-- `./src/services` 用来存放服务的文件夹，如`fetch`请求
-- `./src/utils` 用来存放工具类的文件夹，如`fetch`的封装类
-- `./src/global.css` 公共样式
+```bash
+├── /dist/           # 项目输出目录
+├── /mock/           # 数据mock
+├── /src/            # 项目源码目录
+│ ├── /assets/       # 静态资源
+│ ├── /components/   # UI组件及UI相关方法
+│ ├── /models/       # 数据模型
+│ ├── /pages/        # 路由组件
+│ ├── /services/     # 数据接口
+│ ├── /utils/        # 工具函数
+│ │ ├── request.js   # 异步请求函数
+│ │ └── theme.js     # 项目需要在js中使用到样式变量
+│ └── global.css     # 全局样式
+├── .eslintrc        # Eslint配置
+├── .gitignore       # Git配置
+├── .umirc.js        # Umi配置
+├── LICENSE          # 开源协议
+├── package.json     # 项目信息
+├── README.md        # 项目描述
+└── yarn.lock        # 项目信息
+```
 
 ## 相关教程
 
