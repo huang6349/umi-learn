@@ -1,5 +1,5 @@
+@import url("../node_modules/normalize.css/normalize.css");
 
-html, body, :global(#root) {
+:global(#root) {
   height: 100%;
 }
-
