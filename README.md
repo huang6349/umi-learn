@@ -1,6 +1,6 @@
 # umi-learn
 
-[![](https://img.shields.io/badge/umi-^1.0.0-blue.svg?style=flat-square)](https://github.com/facebook/react)
+[![](https://img.shields.io/badge/umi-^1.0.0-blue.svg?style=flat-square)](https://github.com/umijs/umi/)
 
 学习`umi`
 
